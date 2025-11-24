@@ -7,7 +7,6 @@ const sections = [
     "sections/skills.html",
     "sections/experience.html",
     "sections/education.html",
-    "sections/contact.html"
 ];
 
 async function loadSections() {
