@@ -13,6 +13,8 @@
     --max-width: 960px;
 }
 
+/* Reset / base */
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -39,7 +41,8 @@ main {
     padding: 32px 20px 48px;
 }
 
-/* Header / hero */
+/* Layout: header / hero */
+
 header {
     margin-bottom: 40px;
     display: grid;
@@ -52,6 +55,7 @@ header {
     header {
         grid-template-columns: minmax(0, 1fr);
     }
+
     main {
         padding-top: 24px;
     }
@@ -60,6 +64,8 @@ header {
 .hero-text {
     position: relative;
 }
+
+/* Typography */
 
 .eyebrow {
     font-size: 0.8rem;
@@ -88,6 +94,8 @@ header {
     max-width: 40rem;
 }
 
+/* Buttons */
+
 .hero-actions {
     display: flex;
     flex-wrap: wrap;
@@ -106,9 +114,11 @@ header {
     cursor: pointer;
     background: transparent;
     color: inherit;
-    transition: transform 0.12s ease-out, box-shadow 0.12s ease-out,
-    background 0.12s ease-out, border-color 0.12s ease-out;
-    text-decoration: none;
+    transition:
+            transform 0.12s ease-out,
+            box-shadow 0.12s ease-out,
+            background 0.12s ease-out,
+            border-color 0.12s ease-out;
 }
 
 .btn-primary {
@@ -132,6 +142,8 @@ header {
     background: rgba(15, 23, 42, 0.95);
     transform: translateY(-1px);
 }
+
+/* Hero snapshot card */
 
 .hero-card {
     background: radial-gradient(circle at top left, #1e293b 0, #020617 55%);
@@ -198,6 +210,7 @@ header {
 }
 
 /* Sections */
+
 section {
     margin-bottom: 28px;
     padding: 18px 18px 16px;
@@ -226,6 +239,7 @@ section:last-of-type {
 }
 
 /* Experience */
+
 .experience-list {
     display: grid;
     gap: 14px;
@@ -274,6 +288,7 @@ section:last-of-type {
 }
 
 /* Education */
+
 .edu-list {
     display: grid;
     gap: 10px;
@@ -298,7 +313,8 @@ section:last-of-type {
     color: var(--muted);
 }
 
-/* Skills grid */
+/* Skills */
+
 .skills-grid {
     display: flex;
     flex-wrap: wrap;
@@ -315,7 +331,8 @@ section:last-of-type {
     color: #e5e7eb;
 }
 
-/* Contact */
+/* Contact section on main page */
+
 .contact-list {
     margin-top: 4px;
     font-size: 0.9rem;
@@ -341,6 +358,8 @@ section:last-of-type {
     border-bottom: 1px dashed rgba(148, 163, 184, 0.6);
 }
 
+/* Footer */
+
 footer {
     max-width: var(--max-width);
     margin: 0 auto;
@@ -350,7 +369,8 @@ footer {
     text-align: center;
 }
 
-/* Contact Page Layout */
+/* Contact page layout */
+
 .contact-page {
     max-width: 760px;
     margin: 0 auto;
@@ -394,10 +414,7 @@ footer {
     background: rgba(15, 23, 42, 1);
 }
 
-.contact-submit {
-    width: fit-content;
-}
-
+.contact-submit,
 .contact-back {
     width: fit-content;
 }
