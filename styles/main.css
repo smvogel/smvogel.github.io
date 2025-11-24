@@ -19,17 +19,17 @@ body {
     background: radial-gradient(circle at top, #022424 0, #001010 75%, #000 100%);
     color: var(--text);
     min-height: 100vh;
-    display: flex;
-    justify-content: center;
+    /* no flex on body – let it flow normally */
 }
 
 main {
     max-width: var(--max-width);
     width: 100%;
     padding: 40px 20px;
+    margin: 0 auto;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: center; /* keeps things centered horizontally */
 }
 
 /* Center header */
